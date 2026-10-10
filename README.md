@@ -1,5 +1,5 @@
 # Growex dashboard
 
-Copy `.env.local.example` to `.env.local`, run `npm install`, then `npm run dev`. It runs at `http://localhost:3001` and uses the API URL in `NEXT_PUBLIC_API_URL`.
+Set `NEXT_PUBLIC_API_URL` to the deployed API URL (for example, `https://api.growexmedia.in/api`), run `npm install`, then `npm run dev`. It runs at `http://localhost:3001` locally.
 
-This is intentionally an internal dashboard. Add real authentication before publishing it on the internet.
+For Cloudflare Workers, configure `NEXT_PUBLIC_API_URL` as a **Build variable** and run `npm run deploy`. Attach `admin.growexmedia.in` as a custom domain, then protect it with Cloudflare Access before sharing it. This UI has no application-level authentication yet.
