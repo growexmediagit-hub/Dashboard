@@ -1,0 +1,7 @@
+{
+  "name": "growex-dashboard",
+  "private": true,
+  "scripts": { "dev": "next dev -p 3001", "build": "next build", "start": "next start -p 3001" },
+  "dependencies": { "next": "16.3.8", "react": "19.2.3", "react-dom": "19.2.3", "lucide-react": "^0.563.0" },
+  "devDependencies": { "tailwindcss": "^4", "@tailwindcss/postcss": "^4" }
+}
